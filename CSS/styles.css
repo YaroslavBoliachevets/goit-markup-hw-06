@@ -931,7 +931,7 @@ body {
 
 .modal-information {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 
@@ -1004,6 +1004,11 @@ body {
   fill: var(--accent);
 }
 
+.modal-form-feedback { 
+  position: relative;
+  margin-bottom: 20px;
+}
+
 .modal-feedback { 
   position: absolute;
   top: -18px;
@@ -1059,7 +1064,7 @@ color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-checkbox { 
-  margin-bottom: 30px;
+  position: relative;
 }
 
 .modal-checkbox-text { 
@@ -1076,13 +1081,18 @@ color: rgba(117, 117, 117, 0.5);
 
 .modal-checkbox-input:checked + .modal-checkbox-text .checkbox-item { 
   background-color: var(--accent);
-  border: 0px;
+  border-color: var(--accent);
 }
 
 .checkbox-item { 
   display: flex;
   justify-content: center;
   align-items: center;
+  /* иконка не оч нравится */
+  /* position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(50%); */
   margin-right: 10px;
 
   width: 16px;
@@ -1116,6 +1126,7 @@ color: rgba(117, 117, 117, 0.5);
   display:block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
   width: 200px;
   height: 50px;
   text-transform: capitalize;
